@@ -1,0 +1,127 @@
+/* GHOutdatedPackageFinder
+ * A simple tool to find outdated packages across github.
+ * GitHub: https:///www.github.com/0x4248
+ * Licence: GNU General Public License v3.0
+ * By: 0x4248
+ */
+
+ :root {
+    --color-primary: #dedede;
+    --color-secondary: #f7f7f7;
+    --background-main: #222;
+    --background-light: #2f2f2f;
+    --background-dark: #111;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #dedede;
+    --color-secondary: #f7f7f7;
+    --background-main: #222;
+    --background-light: #2f2f2f;
+    --background-dark: #111;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-main);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-primary);
+}
+
+select {
+    padding: 10px;
+    margin: 10px;
+    width: 520px;
+    border: none;
+    background-color: var(--background-light);
+    color: var(--color-primary);
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    border: none;
+    background-color: var(--background-light);
+    color: var(--color-primary);
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: var(--background-light);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--background-dark);
+    color: var(--color-secondary);
+}
+
+.footer {
+    background-color: var(--background-light);
+    padding: 1rem;
+    margin-top: 10px;
+    display: flex;
+}
+
+.flex-left{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flex-right{
+    margin-right: auto;
+}
+
+.flex-right p {
+    margin: 0;
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.section {
+    background-color: var(--background-light);
+    color: var(--color-primary);
+    padding: 20px;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.section a {
+    color: white;
+}

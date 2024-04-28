@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Github outdated package finder</title>
+        <meta name="description" content="A simple tool to find outdated packages across github">
+        <meta name="author" content="0x4248">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body onload="clearFields()">
+        <div class="main">
+            <br style="margin-bottom: 50px;">
+            <h1>Github outdated package finder</h1>
+            <p>A simple tool to find outdated packages across github.</p>
+            <br style="margin-bottom: 100px;">
+            <select id="package-manager">
+                <option value="pip">pip (requirements.txt)</option>
+                <option value="npm">npm (package.json)</option>
+                <option value="maven">maven (pom.xml)</option>
+                <option value="gradle">gradle (build.gradle)</option>
+                <option value="composer">composer (composer.json)</option>
+            </select>
+            <input type="text" id="package-name" placeholder="Enter package name">
+            <input type="version" id="package-version" placeholder="Enter version (e.g 1.0.0 or comma separated for many versions)">
+            <input type="text" id="username" placeholder="Enter github username (optional)">
+            <button id="search" onclick="openSearch(constructQuery())">Search</button>
+            <p>Output:</p>
+            <p id="expected-query"></p>
+        </div>
+        <div class="section" id="content">
+        </div>
+        <br style="margin-bottom: 50px;">
+        <div class="footer">
+            <div class="flex-left">
+                <img src="https://0x4248.github.io/icon_transparent.png" alt="0x4248" class="pixelate">
+            </div>
+            <div class="flex-right">
+                <p>0x4248</p>
+                <p><a href="https://www.github.com/0x4248"><i class="bi bi-github"></i> GitHub</a></p>
+                <p><a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a></p>
+                <p><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a></p>
+                <p>Site links:</p>
+                <p><a href="https://0x4248.github.io/appcenter"><i class="bi bi-boxes"></i> AppCenter</a></p>
+            </div>
+        </div>  
+        <script src="js/search.js"></script>
+        <script src="js/preview.js"></script>
+        <script src="js/content.js"></script>
+    </body>
+</html>
