@@ -4,7 +4,7 @@ A simple tool to find outdated packages across github.
 
 ## Usage
 
-Go to the [website](https://0x4248.github.io/GHOutdatedPackageFinder) and enter the package name and the version you want search for.
+Go to the [website](https://0x4248.tech/GHOutdatedPackageFinder) and enter the package name and the version you want search for.
 
 ## Licence
 
